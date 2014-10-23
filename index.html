@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TcheLinux Porto Alegre- 2014</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% ; margin: 0 auto 0 auto; width: 80%; }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">TcheLinux</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                      <ul class="nav navbar-nav">
+                        <li style="display:none;"><a href="#sobre">Sobre</a></li>
+                        <li><a href="#inscricao">Inscri&ccedil;&otilde;es</a></li>
+                        <li><a href="#programacao">Programa&ccedil;&atilde;o</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+        <header class="header">
+          <div class="wrapper">
+            <h1 class="logo-name">
+              <a class="logo-link" href="#" title="TcheLinux Porto Alegre" itemprop="name">TcheLinux <br/>Porto Alegre</a>
+            </h1>
+            <h2 class="tagline">6 de Dezembro de 2014, Faculdade SENAC Porto Alegre</h2>
+          </div>
+        </header>
+        <section id="sobre">
+            <div class ="container">
+            <h2 class="subtitle">Sobre</h2>
+            <p>
+                O grupo de usu&aacute;rios de Software Livre TcheLinux, em parceria com a Faculdade SENAC Porto Alegre, tem o prazer de convidar a comunidade, independente do n&iacute;vel de conhecimento e experi&ecirc;ncia com tecnologia, software livre e &aacute;reas afins, para participar do Semin&aacute;rio de Tecnologia em Software Livre TcheLinux.
+            </p>
+            <p>
+                O evento ocorrer&aacute; no dia 6 de Dezembro na Faculdade SENAC Porto Alegre.
+            </p>
+            </div>
+        </section>
+        <section id="inscricao">
+          <div class="container">
+            <h2 class="subtitle">Inscri&ccedil;&otilde;es</h2>
+            <p>
+                <a target="_blank" href="http://goo.gl/jai5wW">Faça sua inscri&ccedil;&atilde;o agora mesmo!</a>
+            </p>
+            <p>
+                A participa&ccedil;&atilde;o no evento &eacute; gratuita por&eacute;m os participantes s&atilde;o incentivados a trazer 2kg de alimentos n&atilde;o perec&iacute;veis (exceto sal) que ser&atilde;o doados a institui&ccedil;&otilde;es de caridade.
+            </p>
+            <p>
+                Os alimentos ser&atilde;o recebidos no momento do credenciamento.
+            </p>
+          </div>
+        </section>
+        
+        <section id="programacao">
+        <div class="container">
+          <h2 class="subtitle">Programa&ccedil;&atilde;o</h2>
+            <p>A grade de programa&ccedil;&atilde;o ser&aacute;
+            preenchida a medida que as palestras forem confirmadas.
+            Hor&aacute;rios de palestras podem ser alterados para
+            acomodar restri&ccedil;&otilde;es dos palestrantes.</p>
+            <div class="schedule-tbl">
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th class="schedule-time">Hor&aacute;rio</th>
+                    <th class="schedule-slot">Audit&oacute;rio</th>
+                    <!-- <th class="schedule-empty">Sala</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="schedule-other">
+                    <td class="schedule-time">8h30</td>
+                    <td class="schedule-slot">Recep&ccedil;&atilde;o / Credenciamento</td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">9h00</td>
+                    <td class="schedule-slot">Abertura</td>
+                  </tr>
+<!--
+                  <tr class="schedule-other">
+                    <td class="schedule-time">09h30</td>
+                    <td class="schedule-slot">
+                        <a href=#speech-1>
+                            <span class="description">
+                                Segurança Através de Gerência de Configurações
+                            </span>
+                            <span class="speaker">Jerônimo Zucco</span>
+                        </a>
+                    </td>
+                    <td class="schedule-slot">
+                        <a href=#speech-2>
+                            <span class="description">
+                                Introdução a aplicativos híbridos com o Phonegap
+                            </span>
+                            <span class="speaker">Eduardo Erlo</span>
+                        </a>
+                    </td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">10h00</td>
+                    <td class="schedule-slot">
+                        <a href=#speech-3>
+                            <span class="description">
+                                Pythonificando a Universidade
+                            </span>
+                            <span class="speaker">João T. Molon, Luciano C. Cruz, Matheus Pereira</span>
+                        </a>
+                    </td>
+                    <td class="schedule-slot">
+                        <a href=#speech-4>
+                            <span class="description">
+                                Nuvem livre com owncloud
+                            </span>
+                            <span class="speaker">Bruno Barcarol Guimarães</span>
+                        </a>
+                    </td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">10h45</td>
+                    <td class="schedule-slot">
+                        <a href=#speech-5>
+                            <span class="description">
+                                Internet: de Gangnam Style ao Marco Civil
+                            </span>
+                            <span class="speaker">Carlos Parisotto</span>
+                        </a>
+                    </td>
+                    <td class="schedule-slot">
+                        <a href=#speech-6>
+                            <span class="description">
+                                openSUSE, construindo uma comunidade
+                            </span>
+                            <span class="speaker">Domingos Teruel</span>
+                        </a>
+                    </td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">11h30</td>
+                    <td class="schedule-slot">
+                        <a href=#speech-7>
+                            <span class="description">
+                                Ubuntu - LInux Para Seres Humanos
+                            </span>
+                            <span class="speaker">Clayton Eduardo Dausacker</span>
+                        </a>
+                    </td>
+                    <td class="schedule-slot">
+                        <a href=#speech-8>
+                            <span class="description">
+                                Trabalho Remoto com Vikings: ferramentas e macetes de muito longe
+                            </span>
+                            <span class="speaker">Miguel Grazziotin</span>
+                        </a>
+                    </td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">12h15</td>
+                    <td class="schedule-slot">
+                        <a href=#speech-9>
+                            <span class="description">
+                                Produção Multimídia em Tecnologias Livres
+                            </span>
+                            <span class="speaker">Breno Dallas</span>
+                        </a>
+                    </td>
+                    <td class="schedule-slot">
+                        <a href=#speech-10>
+                            <span class="description">
+                                Apache CloudStack - O orquestrador para Clouds que realmente funciona
+                            </span>
+                            <span class="speaker">Marcelo Lima</span>
+                        </a>
+                    </td>
+                  </tr>
+
+                  <tr class="schedule-other">
+                    <td class="schedule-time">13h00</td>
+                    <td class="schedule-slot">Encerramento</td>
+                    <td class="schedule-empty">-</td>
+                  </tr>
+-->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="palestras">
+        <div class="container">
+          <h2 class="subtitle">Palestras</h2>
+            <p>A grade de palestras ser&aacute;
+            atualizada a medida que as palestras forem confirmadas.</p>
+        </div>
+        </section>
+<!--
+        <section id="palestras">
+        <div class="container">
+          <h2 class="subtitle">Palestras</h2>
+          <div id="speech-1" class=speech-container>
+            <span class="speech-time">09h15</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Segurança Através de Gerência de Configurações
+                </h3>
+                <span class="speech-description">
+                    Orchestration, ou Gerência de Configurações, descreve o arranjo, coordenação e gestão sistemas complexos de forma automatizada. Tradicionalmente, o conceito de orchestration foi utilizado principalmente no contexto da Nuvem, SOA e virtualização. A necessidade de entregar, implantar e manter aplicações de forma mais rápida fez com que o volume de mudanças em configurações aumentasse exponencialmente. Gerenciar as mudanças de forma rápida, segura e documentada é essencial para manter os aplicativos em execução.
+                </span>
+                <h3 class="speaker-name">Jeronimo Zucco</h3>
+                <span class="speaker-bio">
+                Bacharel em Ciência da Computação pela Universidade de Caxias do Sul e Pós-Graduado em Gerência e Segurança de Redes de Computadores também pela UCS. Certificado CISSP (Certified Information Systems Secure Profissional), membro do projeto OWASP (Open Web Application Security Project) desde 2010. Já palestrou em diversos eventos sobre o tema segurança de sistemas: You Shot The Sheriff, FISL, Tchelinux, Python Brasil, ABIN, PoaSec, GTS e OWASP.
+                </span>
+            </div>
+          </div>
+          <div id="speech-2" class=speech-container>
+            <span class="speech-time">09h15</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Introdução a aplicativos híbridos com o Phonegap
+                </h3>
+                <span class="speech-description">
+                    Será apresentado uma introdução ao mundo dos aplicativos híbridos, onde será apresentado um exemplo de aplicativo exemplo desenvolvido na plataforma Phonegap.
+                </span>
+                <h3 class="speaker-name">Eduardo Erlo</h3>
+                <span class="speaker-bio">
+                Eduardo Erlo é formado em Ciência da Computação pela Universidade de Caxias do Sul - UCS
+
+                Já trabalhou em projetos de desenvolvimento de ERP, sistemas de vendas online, sistemas acadêmicos, sistemas fiscais e sistemas web de grande número de acessos.
+                Hoje trabalha como consultor autônomo em desenvolvimento de aplicações web de alta qualidade, utilizando como base tecnologias livres.
+                </span>
+            </div>
+          </div>
+          <div id="speech-3" class=speech-container>
+            <span class="speech-time">10h00</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Pythonificando a Universidade
+                </h3>
+                <span class="speech-description">
+                    Multiplataforma, de fácil aprendizagem e alta produtividade, Python torna-se cada dia mais popular. Este trabalho procura abordar as principais características da linguagem e trazer um panorama de sua utilização nas universidades. A fim de demonstrar sua versatilidade serão apresentados trabalhos desenvolvidos no curso de Ciência da Computação da Universidade de Caxias do Sul, passando por implementações de grafos, redes, inteligencia artificial, sistemas distribuídos e computação gráfica.
+                </span>
+                <h3 class="speaker-name">João T. Molon</h3>
+                <span class="speaker-bio">
+                Bacharel em Ciência da Computação pela Universidade de Caxias do Sul, atua com desenvolvimento de software há cerca de 6 anos. Atualmente é desenvolvedor Python/Zope/Plone no Instituto Communitas para o Desenvolvimento Humano e Tecnológico.
+                </span>
+                <h3 class="speaker-name">Luciano C. Cruz</h3>
+                <span class="speaker-bio">
+                Programador Python, WEB com Zope/Plone. Diretor técnico na empresa HaDiCom. Bacharelando em Ciência da Computação pela Universidade de Caxias do Sul.
+                </span>
+                <h3 class="speaker-name">Matheus Pereira</h3>
+                <span class="speaker-bio">
+                    Bacharel em Ciência da Computação pela UCS - Universidade de Caxias do Sul. Professor - FTEC Caxias do Sul. Pesquisador e desenvolvedor web - Instituto Communitas para o Desenvolvimento Humano e Tecnológico.
+                </span>
+            </div>
+          </div>
+          <div id="speech-4" class=speech-container>
+            <span class="speech-time">10h00</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Nuvem livre com owncloud
+                </h3>
+                <span class="speech-description">
+                    Uma apresentação sobre o projeto e um guia prático para que pessoas com pouca ou nenhuma experiência com servidores e/ou owncloud possam fazer a instalação e configuração desse serviço de nuvem pessoal.
+                </span>
+                <h3 class="speaker-name">Bruno Barcarol Guimarães</h3>
+                <span class="speaker-bio">
+                Educação: graduação em Ciência da Computação pela Universidade de Caxias do Sul. Atuações profissionais: bolsista em dois projetos de pesquisa, programador e adminstrador de sistemas na Universdade de Caxias do Sul.
+                </span>
+            </div>
+          </div>
+          <div id="speech-5" class=speech-container>
+            <span class="speech-time">10h45</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Internet: de Gangnam Style ao Marco Civil
+                </h3>
+                <span class="speech-description">
+                    Ah, a internet...um lugar onde há milhões de fotos de gatinhos e de fatos não confirmados sobre Chuck Norris(Chuck, se você estiver lendo isso, eu não duvido de nada, ok?). Mas a abrangência da internet é muita maior, ela se tornou uma ferramenta fantástica e ao mesmo tempo perigosa, mesmo para os mais experientes. De uma maneira interessante pretendo explorar sobre o rompimento de barreiras da internet, a rápida divulgação de informações, os cuidados com as informações, a influência sobre as eleições e o Marco Civil da Internet.
+                </span>
+                <h3 class="speaker-name">Carlos Parisotto</h3>
+                <span class="speaker-bio">
+                    Trabalho há 6 anos com Linux CentOS/Fedora/RedHat e sou Analista de Suporte na empresa Vendabem Informática. Palestrando em meu quarto Tchelinux, também possuo certificação LPIC-1 e CLA.
+                </span>
+            </div>
+          </div>
+          <div id="speech-6" class=speech-container>
+            <span class="speech-time">10h45</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    openSUSE, construindo uma comunidade.
+                </h3>
+                <span class="speech-description">
+                    Essa palestra irá explorar onde a comunidade openSUSE está atualmente
+                    e para onde está indo. Nossos projetos, esclarecer sobre as mudanças e
+                    continuidades da comunidade openSUSE nos últimos anos e projetos
+                    futuros.
+                </span>
+                <h3 class="speaker-name">Domingos Teruel</h3>
+                <span class="speaker-bio">
+                Tecnólogo em Processamento de dados e Gestão da Tecnologia da
+                Informação, especialista em interfaces de sistemas, atuando no
+                desenvolvimento e implementação de sistemas web com software livre e
+                Governo Eletrônico. Membro ativo das comunidades locais de PHP e Zend
+                Framework,KDE-SP e openSUSE como Local Coordinator para a América
+                Latina e Brasil.
+                </span>
+            </div>
+          </div>
+          <div id="speech-7" class=speech-container>
+            <span class="speech-time">11h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Ubuntu - LInux Para Seres Humanos
+                </h3>
+                <span class="speech-description">
+                    Nesta palestra serão abordados aspectos referentes a uma breve história da criação do Movimento Software Livre e em seguida particularidades da distribuição GNU/Linux Ubuntu (história, versões, aplicativos e configurações básicas).
+                </span>
+                <h3 class="speaker-name">Clayton Eduardo Dausacker</h3>
+                <span class="speaker-bio">
+                Clayton Eduardo Dausacker
+                Técnico em Informática
+                Membro Tchêlinux.Org - Grupo de Usuários de Software Livre do Estado do RS
+                Sócio da Associação Software Livre.Org
+                Usuário GNU/Linux #449537
+                Acadêmico do Curso de Serviço Social - ULBRA
+                </span>
+            </div>
+          </div>
+          <div id="speech-8" class=speech-container>
+            <span class="speech-time">11h30</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Trabalho Remoto com Vikings: ferramentas e macetes de muito longe
+                </h3>
+                <span class="speech-description">
+                    Nessa palestra vou apresentar um pouco da nossa experiência adquirida com o tão falado (e às vezes muito sonhado) trabalho remoto, para tornar as coisas mais interessantes não contentes em trabalhar remotamente o resto da nossa equipe está na Suécia, então ninguém se comunica na língua nativa e temos um fuso que gira entre 3h até 5h de diferença, nesses quase dois anos aprendemos algumas nuances de trabalhar com pessoas com uma cultura tão diferente e para nossa (nem-tão-grande) surpresa Linus Torvalds estava errado com a sua famosa frase, código é o mais fácil entre todos os desafios. Definitivamente nós acreditamos que "Code is cheap, show me how you talk", comunicação é tão ou mais importante que habilidades técnicas, veja como estamos trabalhando com esse pessoal há quase dois anos sem falar uma palavra em sueco.
+                </span>
+                <h3 class="speaker-name">Miguel Grazziotin</h3>
+                <span class="speaker-bio">
+                Desenvolvedor de software com a mesma impressão de que não sabe nada há quase 10 anos, trabalhando principalmente com Ruby, Javascript, web em geral e seus frameworks. Empolga-se fácil com novas tecnologias e paradigmas mas principalmente com diferentes pessoas, relacionamentos e pontos de vista. Ciclista, agilista, "startupzista" e aspirante a kungfuzero.
+                </span>
+            </div>
+          </div>
+          <div id="speech-9" class=speech-container>
+            <span class="speech-time">12h15</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Produção Multimídia em Tecnologias Livres
+                </h3>
+                <span class="speech-description">
+                    Através desta, busca-se realizar uma reflexão sobre produção multimídia no Linux. Design, audiovisual, animação, produção musical, qual a possibilidade de realização destas produções a partir do software livre? Aqui, não trataremos de nos deter em um programa apenas; trata-se de uma discussão sobre a possibilidade da produção multimídia a partir das tecnologias livres; suas dificuldades, principais desafios, recentes progressões. Produções audiovisuais, gráficas e de audio serão revistas também para considerar suas possibilidades e potenciais.
+                </span>
+                <h3 class="speaker-name">Breno Dallas</h3>
+                <span class="speaker-bio">
+                Breno Dallas é graduado em filosofia, e por anos exerceu docência na área das ciências humanas no Ensino Médio e em projetos de Educação e Vivência. Atualmente realiza atividades no campo da produção e gestão cultural. É realizador de uma série de festivais, mostras e atividades na área do cinema e da música. Em seu currículo constam atividades no Grupo ManiFestaSol, Festival Brasileiro de Música de Rua, Mostra Música Daqui, Grito Rock, Jornada Audiovisual, Semana do Audiovisual, Primavera do Ser, PósTV, entre outros. Também desenvolve trabalhos na área da comunicação, relacionados diretamente com mídias sociais. Atualmente faz parte do Núcleo Audiovisual TME, ponto de cultura de Caxias do Sul, onde ministra cursos de design e audiovisual em software livre, também atuando como disseminador do software livre na produção multimídia.
+                </span>
+            </div>
+          </div>
+          <div id="speech-10" class=speech-container>
+            <span class="speech-time">12h15</span>
+            <div class="speech-info">
+                <h3 class="speech-title">
+                    Apache CloudStack - O orquestrador para Clouds que realmente funciona
+                </h3>
+                <span class="speech-description">
+                    O objetivo desta palestra é apresentar a plataforma de gerenciamento de nuvens considerada a mais estável e também a preferida por administradores de infraestruturas de Cloud, o Apache CloudStack. Desmistificar os mitos em relação a outras ferramentas e demonstrar de maneira prática e detalhada o seu funcionamento.
+                </span>
+                <h3 class="speaker-name">Marcelo Lima</h3>
+                <span class="speaker-bio">
+                Consultor Sênior na empresa ShapeBlue, maior integrador independente da plataforma Apache CloudStack no mundo.
+                Especialista na construção de nuvens privadas e públicas, engenheiro de redes com larga experiência em ambientes complexos de Data Center no Brasil e exterior.
+                </span>
+            </div>
+          </div>
+        </div>
+        </section>
+-->
+        <section id="local">
+        <div class="container">
+          <h2 class="subtitle">Local</h2>
+          <p>
+            Faculdade SENAC Porto Alegre<br/>
+            Rua Cel. Genu&iacute;no, 130, Centro Histórico<br/>
+            Porto Alegre - Rio Grande do Sul
+          </p>
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
+        </section>
+        <section id="apoio">
+            <div class="container">
+                <h2 class="subtitle">Apoio</h2>
+                <h4>Institucional</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://portal.senacrs.com.br" title="FSPOA" class="apoio-logo apoio-link" target="_blank" style="width:300px">
+                      <img src="images/senac.png" alt="FTEC" class="photo"/>
+                    </a>
+                  </li>
+                </ul>
+                <h4>Patroc&iacute;nio</h4>
+                <ul class="apoio-item">
+                  <li class="apoio-item">
+                    <a href="http://goo.gl/eLSqYm" title="Seja um patrocinador" class="apoio-logo apoio-link" target="_blank">
+                      <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline" id="footer-menu">
+                        <li class="active"><a href="#">TcheLinux</a></li>
+                        <li><a href="#programacao">Programa&ccedil;&atilde;o</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="github">
+                <a href="https://github.com/TcheLinux/poa2014" target="_blank">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                    <p class="copyright text-muted small">Acesse o TcheLinux Porto Alegre 2014 no GitHub</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div style="display:none;">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
+    </div>
+    </body>
+</html>
