@@ -16,10 +16,10 @@ function create_db() {
    pg_close($conn); 
 }
 
-function list_table($table_candidate, $fields)
+function list_table($table_candidate, $fields, $index)
 {
     $table = split(" ",$table_candidate)[0];
-    $query = "SELECT ".join(",",$fields)." FROM ".$table.' ;';
+    $query = "SELECT ".join(",",$fields)." FROM ".$table.' ORDER BY '.$index;
 
     $conn = connect() or die("Could not connect to database.");
     $rs = pg_query($conn, $query);

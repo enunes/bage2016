@@ -41,7 +41,7 @@ label {
 }
 .dbentry {
     display: inline-block;
-    width: 50%;
+    width: 32%;
 }
 </style>
 </head>
@@ -58,12 +58,13 @@ label {
 <input id="submit-button" type="submit" value="Requisitar Certificado." />
 </div>
 <div id="error_msg"></div>
+</form>
+<hr />
 <div>
 <?php
     include('certificates/db.php');
-    list_table('participantes', array("nome"));
+    list_table('participantes', array("nome"), "nome");
 ?>
 </div>
-</form>
 </body>
 </html>
