@@ -62,8 +62,8 @@ label {
 <hr />
 <div>
 <?php
-    include('certificates/db.php');
-    list_table('participantes', array("nome"), "nome");
+    if (include('certificates/db.php'))
+        list_table('participantes', array("nome"), "nome");
 ?>
 </div>
 </body>

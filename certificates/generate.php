@@ -1,7 +1,7 @@
 <?php
 
-include('fpdf.php');
-include('db.php');
+require('fpdf.php');
+require('db.php');
 
 function wiki($pdf, $text)
 {

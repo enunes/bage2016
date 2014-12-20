@@ -1,7 +1,11 @@
 <?php 
 
+require('db_conf.php');
+
 function connect() {
-    return pg_connect("host=localhost dbname=tchelinux user=rafael");
+    $str = "host=${GLOBALS['dbhost']} dbname=${GLOBALS['dbname']} user=${GLOBALS['dbuser']}";
+    return pg_connect($str);
+    #return pg_connect("host=$dbhost dbname=$dbname user=$dbuser password=$dbpassword");
     #return pg_connect("host=localhost dbname=tchelinu_EUxSs user=tchelinu_CtnYT password=coRZjRxHquCrZg27tBvVFyuZh6preQ5CxgPuDYph") or die("Could not connect to database.");
 }
 
