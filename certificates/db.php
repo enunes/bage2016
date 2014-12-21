@@ -34,7 +34,8 @@ function list_table($table_candidate, $fields, $index)
     } else
         return null;
 
-    $table = split(" ",$table_candidate)[0];
+    $table = split(" ",$table_candidate);
+    $table = $table[0];
     $query = "SELECT ".join(",",$fields)." FROM ".$table.' ORDER BY '.$index;
 
     $conn = connect() or die("Could not connect to database.");
