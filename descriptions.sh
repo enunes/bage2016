@@ -14,16 +14,20 @@ EOF`
 id=1
 grep -v "^#" < Tchelinux2015-Final.csv | while read line
 do
+
     titulo=`echo $line | cut -d@ -f1 | tr -d '"'`
     autor=`echo $line | cut -d@ -f2 | tr -d '"'`
     resumo=`echo $line | cut -d@ -f3 | tr -d '"'`
     curriculo=`echo $line | cut -d@ -f4 | tr -d '"'`
+    
+    #echo "ID = $id - $titulo" 1>&2
+    
     echo $template | sed "
-    s/@ID@/$id/
-    s/@TITLE@/$titulo/
-    s/@SPEAKER@/$autor/
-    s/@DESCRIPTION@/$resumo/
-    s/@RESUME@/$curriculo/
+    s#@ID@#$id#
+    s#@TITLE@#$titulo#
+    s#@SPEAKER@#$autor#
+    s#@DESCRIPTION@#$resumo#
+    s#@RESUME@#$curriculo#
     "
     id=$[$id + 1]
 done
