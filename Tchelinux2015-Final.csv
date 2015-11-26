@@ -1,0 +1,97 @@
+#### Titulo ### Autor ### Descrição ### Bio ###
+#
+#
+#####################
+### 09:30 - 10:20 ###
+#####################
+### Sala 1 ###
+"Servindo sites estáticos com Harp JS"@"William Brendaw"@"Aprenda a criar e servir um site estático com o Harp, gerador de sites estáticos. O Harp funciona como pré-processador de arquivos Markdown, Sass, Less, CoffeeScript e serve eles como HTML, CSS e JS, prontos para utilização em qualquer serviço de hospedagem. Nesta apresentação será criada um projeto simples (blog) para mostrar as funcionalidades do Harp."@"William Brendaw é desenvolvedor de Software há 3 anos. Graduando em Análise de Sistemas pelo IFRS - Campus Rio Grande. Entusiasta de novas tecnologias e cultura hacker. Usa software livre há 5 anos."
+### Sala 2 ###
+"Protótipos de Interface com SVG+JS"@"Augusto Rückert"@"Apresentação de um workflow para protótipos testáveis de interface de software utilizando inkscape e bibliotecas javascript para manipulação do SVG. O foco é mostrar a possibilidade de criação livre de layout com o inkscape aliada a geração de protótipos que simulem a interação da aplicação, sem necessidade de transformar em código front-end"@"Augusto Rückert atua como Designer na área de tecnologia da informação, com foco em experiência do usuário, interfaces de uso e desenvolvimento de produtos tecnológicos/digitais. Possui também experiência em design visual, web, sinalização, programação front-end e pesquisa em design. Usa software livre e sempre tenta integrar ferramentas abertas aos seus processos de trabalho."
+### Sala 3 ###
+"Drones com Software e Hardware Livre"@"Anderson Paim Porto Alegre"@"Programando Drones utilizando ferramentas Open Source, Ardupilot/OpenPilot, Missões Automatizadas Construção e Configuração"@"Atualmente Chefe da Seção de Informática da Primeira Divisão de Levantamento - Exército Brasileiro, Administrador de Redes e Segurança Linux, Ministrei cursos de Redes e Segurança no Senac de 2004 a 2006, Formado em Programação para WEB - Universidade do Sul de Santa Catarina. Esntusiasta e Pesquisador - Multirotores e suas aplicações"
+### Sala 4 ###
+"Ferramentas para SysAdmin"@"Daniel Lara"@"Ferramentas para auxiliar e administrar seu ambiente ou ambiente de seus clientes tais como monitramento, backup, help desk"@"Daniel Lara é administrador de sistemas e redes GNU/Linux, trabalhou com infraestrutura na empresa RedeHost, atualmente trabalha na Office Tecnologia com Administração de Servidores. É acadêmico na área de tecnologia de redes e usuário GNU/Linux. Um dos Moderadores do Portal Viva o Linux. Embaixador do Fedora."
+#
+#
+#####################
+### 10:30 - 11:20 ###
+#####################
+### Sala 1 ###
+"Desenvolvimento de aplicativos para Firefox OS"@"Samuel Moraes, Rodrigo Waters e Jaime Maretoli"@"O sistema operacional móvel Firefox OS foi pensado para te oferecer o que você precisa, quando você precisa e para adaptar-se à sua vida. É inteligente e rápido como tudo deveria ser. Possuindo sua loja própria onde qualquer pessoa torna-se capaz de soltar a sua imaginação criando aplicativos. Venha conhecer o Firefox OS e como desenvolver aplicativos para este maravilhoso sistema!"@"Samuel Moraes - Estudante, empresário, programador, engenheiro de redes, voluntário na comunidade Mozilla Brasil e no (Mozilla) CommunityOPs e pseudocontrabaixista ­profissional.
+
+Rodrigo Waters - Programador, voluntário na comunidade Mozilla Brasil e Technovation Challenge. Entusiasta da web aberta, visando arranjar meios para que todas as pessoas tenham contato com a web e aprendam de que forma ela pode ser usada de Todos para Todos. 
+
+Jaime Maretoli - Técnico em Informática formado pelo Senac, Bacharelando em Ciência da Computação e Pesquisador Acadêmico na URI, Voluntário na comunidade Mozilla Brasil. Palestrante, Entusiasta e Participante em diversas comunidades de Software Livre."
+### Sala 2 ###
+"Trocando mensagens com ØMQ"@"Ricardo José Maraschini"@"Esta apresentação visa demonstrar as facilidades providas pela API Zero MQ na troca de mensagens entre diferentes processos, tanto local quanto remotamente. As diferentes abordagens na solução de problemas serão demonstradas tanto conceitualmente(sempre) como na prática(algumas vezes)."@"Ricardo Maraschini, é Graduado e desenvolvedor de software na area de monitoramento de ambientes de rede e negócios há 10 anos trabalha com ambientes Linux há pelo menos 15 anos."
+### Sala 3 ###
+"Automação de infraestruturas com Ansible"@"Marcos Vieira"@"Nesta apresentação serão apresentados os seguintes tópicos: O que é automação de infraestrutura de TI. E seu atual estágio de utilização no mercado. Uma visão sobre as principais ferramentas disponíveis um comparativo com as principais features de cada ferramenta com foco nas vantagens da utilização do Ansible para automação e orquestração de TI. Como funciona o Ansible, como instalar e configurar um ambiente com Ansible. Demonstração prática de utilização da ferramenta."@"Marcos Vieira é Profissional de Infraestrutura/Segurança de de TI com enfâse no uso de Soluções Open Source. Atua a mais de 10 anos na área onde ja desenvolveu projetos para empresas de todos os portes e segmentos. Atualmente é Analista de Suporte Sênior na Espectra Tecnologia. Membro do Projeto Fedora Linux (Embaixador LATAM) e do Grupo de usuários TcheLinux."
+### Sala 4 ###
+"Entregando um site dinâmico para 70 milhões de usuarios"@"Rafael Cirolini"@"Arquitetura de entrega de um site dinâmico para grandes públicos, escalando o Nginx e aplicações assincrônicas, usando o MongoDB com grande acesso, performance e HTTP/2."@"Rafael é Analista de Suporte Senior no Terra, responsável por projetar e configurar a plataforma de websites e sistemas web no Brasil, em vários países da América Latina, Estados Unidos e Espanha. Trabalha no desenvolvimento e implementação de projetos para expansão e manutenção da infra-estrutura para a entrega dos websites e do CMS com seus vários componentes. Otimização de performance, e planejamento de infra-estrutura para servir demandas variáveis."
+#
+#
+#####################
+### 11:30 - 12:30
+#####################
+### Sala 1 ###
+"O Phantasmagórico mundo da automação"@"Ícaro Heimig"@"Automação de testes, automação de navegação, automação de… tudo. Hoje vivemos em um tempo em que queremos que tudo seja automático onde a informação venha até nós e não o contrário. Nessa palestra vai ser mostrado como automatizar a navegação por sites e sistemas que exijam logon, tirar prints de tela e, por quê não testar e ver se está tudo no lugar? Será abordado: História da cURL e chamadas HTTP sem interface gráfica, evolução ao módulo request do nodejs e webscrapping com cheerio até chegar a uma solução de mais alto nível com phantomjs e nightmarejs.
+  - Um pouco de história da cURL e seus usos;
+  - Demonstração via console de como efetuar chamadas HTTP com algumas configurações para, por exemplo, evitar erros com certificados SSL;
+  - Demonstração do módulo request do nodejs;
+  - Explicação de webscrapping e seus usos;
+  - Explicação e demonstração do módulo cheerio;
+  - Demonstração prática de um crawler simples que salva algumas fotos e informações de um site;
+  - Explicação da evolução para o PhantomJS e seus usos, incluindo testes funcionais;
+  - Demonstração do mesmo exemplo do cheerio mas utilizando PhantonJS;
+  - Explicação da abstração da api do PhantomJS com NightmareJS e demonstração de um teste funcional e um crawler;
+  - Usos benéficos e algumas (in)utilidades dessas abordagens.
+
+A ideia é mostrar o quão simples(e divertido) é obter dados de qualquer lugar na web, mesmo que exija autenticação e/ou seja totalmente renderizado via javascript. Isso através de tecnologias open-source headless browser(phantomjs) e via linha de comando :D"@"Ícaro Heimig contribui para alguns projetos pequenos no github, a maioria com documentação, tradução ou algum erro pontual, normalmente voltados para web. Contribui também com a tradução da MDN na parte web também."
+### Sala 2 ###
+"Desenvolvendo com persistência poliglota"@"Christiano Anderson"@"Cada aplicação tem suas características e particularidades, exige do desenvolvedor uma perícia quanto ao tratamento de dados. Existem diversas formas de persistir dados, seja com bancos relacionais (SQL) e não relacionais (NoSQL). Essa palestra aborda um cenário de persistência poliglota, ou seja, o uso de mais de um banco de dados na mesma aplicação, extraindo o melhor modelo para cada tipo de dados. MongoDB, Redis, Neo4J e PostgreSQL serão usados como exemplo em uma aplicação real de e-commerce."@"Christiano Anderson trabalha com web há quase 20 anos. Trabalhou nos principais provedores de internet comercial do Brasil, como Terra Networks e Zip.net (Zipmail). Já foi contribuidor ativo do projeto GNU, atualmente contribui para os projetos Python e MongoDB. É sócio da Propus Data Science, empresa especializada em big data e arquitetura de dados com persistência poliglota."
+### Sala 3 ###
+"Docker para todos"@"Cristiano dos Santos Diedrich"@"Palestra voltada a DevOps, com o objetivo de mostrar onde o Docker pode te ajudar nos desafios do dia-a-dia, entenda como ele funciona e como pode ser aplicado em seu ambiente."@"Cristiano Diedrich é entusiasta do Open Source e trabalha atualmente como Container Specialist na Umbler, seu principal foco é ir atrás de ideias novas e torná-las realidade por meio de soluções simples e eficientes.​ É autor também no Blog Mundo Docker."
+### Sala 4 ###
+"Linux Kernel: Histórico e Evolução"@"Augusto Mecking Caringi"@"Histórico do Linux Kernel, focando no contexto que levou Linus Torvalds a iniciar o seu desenvolvimento, evolução, estrutura e modelo de desenvolvimento."@"Augusto Caringi é Mestre em Ciência da Computação pela PUC-RS, foi professor universitário por uns anos e atualmente trabalha como Embedded Software Engineer na Datacom. Mexe com Linux desde 1997."
+#####################
+### 14:00 - 14:50 ###
+#####################
+### Sala 1 ###
+"DevOps: desenvolvedores e sysadmins cooperando na prática"@"Ari Stopassola Junior"@"Por muito tempo desenvolvedores e administradores de infraestrutura tentam fazer integrações para que a implantação (deployment) seja mais efetiva, com menos sofrimento ao portar do ambiente de desenvolvimento para homologação/produção. Essa apresentação introduz ao movimento DevOps, que aproxima desenvolvedores e administradores de sistema (sysadmins), para que trabalhem em maior sinergia. A proposta é ilustrar os pilares da cultura DevOps, bem como os softwares que a permeia, focada em ferramentas e práticas reais, com exemplos do ecossistema PHP."@"Bacharel em Informática com ênfase em Análise de Sistemas pela Unisinos, cursou mestrado em Engenharia Informática e de Computadores pelo Instituto Superior Técnico da Universidade Técnica de Lisboa (Portugal), perito judicial 'ad hoc' especializado em TI (mantenedor do site PERITO.inf.br), Zend Certified Engineer (PHP 5.3) e Zend Certified PHP Engineer (PHP 5.5), Zend Framework 2 Certified Architect (ZFCA) #ZEND004019, Certified ScrumMaster pela Scrum Alliance #203613, Microsoft Certified Professional (MCP), consultor web e PHP evangelist."
+### Sala 2 ###
+"Programador Full Stack na prática"@"Matheus Pereira"@"A arte ninja milenar que surgiu nos últimos anos chamada "Programador Full Stack". A apresentação será um overview, e um passo a passo, para subir uma aplicação web Python. O universo Full Stack passa por SO (Linux), controle de versão (Git), Banco de Dados, Linguagem de Programação (Python), HTML, JS, CSS (Sass) e Deploy (Docker e OpenShift). Um ninja Full Stack deve estar ligado em todos os níveis de desenvolvimento e por dentro de temas como Controle de Versão, Containers, Cloud, REST, Frameworks JS, Pré-processadores CSS. A lista é gigante e não existe um único caminho a seguir. Tentarei não abrir o terminal, mas quase sempre e inevitável."@"Matheus Pereira é desenvolvedor de software no Instituto Communitas, Mestrando em Inteligência Artificial na UFRGS, bacharel em Ciência da Computação pela UCS. Organizador voluntários dos eventos TcheLinux Caxias e PyCaxias desde 2013. Palestras TcheLinux Caxias do Sul, Porto Alegre, Bento e Pelotas, PyCaxias, PySM, TDC e FISL."
+### Sala 3 ###
+"Xen a jato: Do Básico ao Passthru"@"João Spindler"@"A palestra tem como objetivo mostrar o uso do Xen como ferramenta de teste para maquinas virtuais, usando uma abordagem simples e objetiva, mescando tela preta e ambiente gráfico e mostrando como fazer Passthru."@"João é graduando em Sistemas de Informação pela Fatec Senac, Ciência da Computaçao e Segurança da Informação pela Unisinos. Técnico em informática pela escola Alcides Maya, usa Linux, de verdade, desde 2005".
+### Sala 4 ###
+"Um passeio pela gerência de memória no Linux, para sysadmins"@"Rafael Aquini"@"O sistema de gerenciamento de memória presente no Linux é eficiente, porém geralmente mal compreendido por falta de contextualização apropriada. A proposta desta sessão é apresentar as principais características do gerenciamento de memória no Linux e tentar elucidar administradores de sistemas sobres alguns de seus pontos controversos, como gerencia do page-cache, demand paging (swap) dentre outros."Rafael Aquin é um antigo usuário de software e computadores, em recuperação de dependência computacional eletrônica via um bacharelado em matemática para reaprender as computações manuais básicas. É engenheiro de software na Red Hat, atualmente mantendo o kernel do Red Hat Enterprise Linux 7."
+#
+#
+#####################
+### 15:00 - 15:50 ###
+#####################
+### Sala 1 ###
+"PHP no Campo de Batalha: Segurança Avançada e Programação Defensiva"@"Rafael Jaques"@"Todos os dias, diversas de pessoas ao redor do mundo começam a programar em PHP. É uma linguagem fácil de ser aprendida e, por isso, pode fazer com que desenvolvedores despreparados criem sistemas vulneráveis. O objetivo dessa palestra é apresentar as principais vulnerabilidades de aplicações PHP e a maneira de contorná-las. Serão mostradas também técnicas de programação defensiva, resposta a incidentes, prevenção de perdas e outros tópicos  relevantes à segurança da informação"@"Rafael Jaques é professor do IFRS e redator do PHPit. Graduado em Análise e Desenvolvimento de Sistemas, pós-graduado em Gestão do Ensino Superior e mestrando em Educação. Trabalha com PHP há mais de 10 anos, contribui com projetos abertos e é viciado em segurança."
+### Sala 2 ###
+"Luckiest developers with Django and Phonegap"@"Joelmir Ribacki"@"Apresentação de uma plataforma de sorteios com Django e Phonegap, explicação da estrutura e integração entre o aplicativo híbrido desenvolvido com Phonegap, com o sistema desenvolvido com Django. O principal objetivo é mostrar o funcionamento das duas tecnologias e a facilidade em integrar utilizando webservices."@"Joelmir Ribacki é desenvolvedor web com Django, aplicativos híbridos com Cordova (Phonegap), Angular e Ionic. Estudante do curso Bacharel em Ciência da Computação na UCS. Participante do Tchêlinux desde 2009 com palestras sobre Python, Android e aplicativos híbridos, também faz parte da organização das duas edições do PyCaxias"
+### Sala 3 ###
+"OpenShift v3 - Docker e Kubernetes ao alcançe de todos"@"Mateus Caruccio"@"A nova versão da plataforma OpenShift entrega a qualquer pessoa ferramentas Enterprise-grade. Vamos explorar os conceitos que compõem este ambiente de desenvolvimento para nuvem, desde a integração de containers Docker, orquestração Kubernetes, métodos de deploy, rollback e ciclo dev/qa/prod."@"Mateus Caruccio é Linuxer desde 1998, trabalhou como desenvolvedor em empresas como Terra, T&T e HP Brasil no passado e hoje em dia trabalha na GetupCloud, empresa 100% brasileira de computação em nuvem baseada em OpenShift Origin, na qual é um dos fundadores."
+### Sala 4 ###
+"Perf and Ftrace"@"Luis Claudio R. Gonçalves"@"Perf and Ftrace are performance analyzing tools in Linux, they supports hardware performance counters, tracepoints, software performance counters (e.g. hrtimer), and dynamic probes"@"Luis Claudio é engenheiro do time de Kernel e Real Time da Red Hat."
+#####################
+### 16:00 - 16:50 ### 
+#####################
+### Sala 1 ###
+"Tudo o que você precisa saber sobre o PHP7"@"Er Galvão"@"Com a iminente chegada da major mais importante da linguagem em muito tempo, saiba o que muda, quais são as novidades, o que vai quebrar, como são decididas as mudanças e principalmente onde obter mais informações!"@"Er Galvão é Presidente da ABRAPHP (Associação Brasileira de Profissionais PHP), Diretor da PHP Conference Brasil, Contribui para a tradução da documentação oficial Atua como Zend Framework Evangelist para o ZTeam, da Zend. 20+ anos desenvolvendo sistemas e aplicações com interface web 15+ destes com PHP 7+ com Zend Framework Palestrante em eventos nacionais e internacionais Instrutor de cursos presenciais e a distância Fundador e líder do GU PHPBR Fundador* e membro do GU PHPRS"
+### Sala 2 ###
+"Tradução do Debian para Português do Brasil"@"Adriano Rafael Gomes"@"Esta palestra é uma introdução à tradução do Debian para português do Brasil e um convite para participar da equipe."@"Adriano Gomes é Bacharel em Ciência da Computação, usuário de Software Livre e membro ativo do grupo de usuários SoftwareLivreVS e da equipe de tradução do Debian para português do Brasil."
+### Sala 3 ###
+"Open Hybrid Cloud"@"Amador Pahim"@"A virtualização é o novo default. Com o crescimento da disponibilidade das tecnologias de Cloud Computing, as empresas agora procuram formas de integrar esses ambientes para reduzir a carga de trabalho e o tempo de entrega de aplicações em qualquer ambiente, seja físico, virtualizado, cloud privada ou cloud pública. Essa apresentação tem o objetivo de mostrar as principais soluções em Software Livre que se encaixam no conceito de ""Open Hybrid Cloud"". Falaremos sobre KVM, oVirt, OpenStack, ManageIQ, The Foreman e tecnologias adjacentes."@"Amador Pahim é Embaixador do Projeto Fedora; Colaborador da Comunidade oVirt; Senior Software Maintenance Engineer no Time de Virtualziação da Red Hat."
+### Sala 4 ###
+"SystemTap Básico"@"João Avelino Bellomo Filho"@"O kernel de um sistema operacional é composto por um mar de informações e por onde vivem as mais diversas formas de algoritmos. Mergulhar nele é maravilhoso e um grande desafio. SystemTap é uma ferramenta que oferece instrumentos para monitoramente e rastreamento destas informações. Esta apresentação visa ilustrar como instalar e usá-la de forma básica para depuração e estudo do kernel Linux possibilitando um mergulho controlado e seguro."@"João Avelino é Tecnólogo em Processamento de Dados pela Universidade Católica de Pelotas, Mestre em Ciência da Computação pela Universidade Federal do Rio Grande do Sul. Atualmente é Software Maintenance Engineer na Red Hat especializado em redes e professor na Faculdade SENAC Porto Alegre."
+#
+#
+#####################
+### 17:00 - 17:30 ###
+#####################
+"Encerramento"
