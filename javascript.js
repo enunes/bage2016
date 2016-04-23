@@ -44,59 +44,66 @@ $('.schedule-tbl a').on('click', function(event) {
 });
 
 //map
+var geocoder = new google.maps.Geocoder();
+var unipampa;
 var directionsDisplay;
-var directionsService = new google.maps.DirectionsService();
-var map;
-var latitude = -30.0351002;
-var longitude = -51.2265906;
-var ftec = new google.maps.LatLng(latitude, longitude);
-directionsDisplay = new google.maps.DirectionsRenderer();
-var mapOptions = {
-  zoom:15,
-  center: ftec,
-  streetViewControl: false,
-  panControl: true,
-  overviewMapControl: true,
-  zoomControl: true,
-  scaleControl: true
-}
-map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-directionsDisplay = new google.maps.DirectionsRenderer();
-directionsDisplay.setMap(map);
-directionsDisplay.setPanel(document.getElementById('directions-panel'));
-var marker = new google.maps.Marker({
-              position: ftec,
-              map: map,
-              title:"FTEC Caxias do Sul"
+var directionsService;
+geocoder.geocode( { 'address': 'Av. Maria Anunciação Gomes Godoy 1650, Bagé'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+    	unipampa = results[0]['geometry']['location'];
+    	
+    	var mapOptions = {
+    	  zoom: 15,
+    	  center: unipampa,
+    	  streetViewControl: false,
+    	  panControl: true,
+    	  overviewMapControl: true,
+    	  zoomControl: true,
+    	  scaleControl: true
+    	}
+    	var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+    	directionsService = new google.maps.DirectionsService();
+
+    	directionsDisplay = new google.maps.DirectionsRenderer();
+    	directionsDisplay = new google.maps.DirectionsRenderer();
+    	directionsDisplay.setMap(map);
+    	directionsDisplay.setPanel(document.getElementById('directions-panel'));
+    	
+    	marker = new google.maps.Marker({
+			position: unipampa,
+			map: map,
+			title: "UNIPAMPA"
+    	});
+    } else {
+    	console.log("Geocode was not successful for the following reason: " + status);
+    }
 });
 
+
 function calcRoute(starte) {
-  var start = document.getElementById("search-route").value;
-  if(starte != undefined) {
-    start = starte;
-  }
-  var end = ftec;
-  var request = {
-      origin:start,
-      destination:end,
-      travelMode: google.maps.TravelMode.DRIVING
-  };
-  directionsService.route(request, function(response, status) {
-  if (status == google.maps.DirectionsStatus.OK) {
-    directionsDisplay.setDirections(response);
-  }
-  });
+	var start = starte != undefined ? starte : document.getElementById("search-route").value;
+	var request = {
+		origin: start,
+		destination: unipampa,
+		travelMode: google.maps.TravelMode.DRIVING
+	};
+	directionsService.route(request, function(response, status) {
+		if (status == google.maps.DirectionsStatus.OK) {
+			directionsDisplay.setDirections(response);
+		}
+	});
 }
 
-
-
 autocomplete = new google.maps.places.Autocomplete(
-    (document.getElementById('search-route')),
-    { types: ['geocode'] });
+    document.getElementById('search-route'),
+    { types: ['geocode'] }
+);
+	
 // When the user selects an address from the dropdown,
 // populate the address fields in the form.
 google.maps.event.addListener(autocomplete, 'place_changed', function() {
-  calcRoute();
+	calcRoute();
 });
 
 

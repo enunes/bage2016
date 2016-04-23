@@ -212,8 +212,8 @@ h2.subtitle {
     }
 }
 
-footer .github, footer .github p{
-    text-align: center;
+.github {
+    margin-bottom: 10px;
 }
 
 footer {

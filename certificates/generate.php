@@ -53,13 +53,13 @@ function generate($FULANO,$palestras,$finger) {
     $msg = 'Seminário de Software Livre';
     $pdf->Cell(297-2*$MARGIN,35,utf8_decode($msg),0,1,'C');
     $pdf->SetFont('Arial','B',32);
-    $pdf->Cell(297-2*$MARGIN,0,'TcheLinux Porto Alegre 2014',0,1,'C');
+    $pdf->Cell(297-2*$MARGIN,0,'Tchelinux Bagé 2016',0,1,'C');
 
     $pdf->SetFont('Times','',18);
 
-    $msg = "O Grupo de Usuários de Software Livre TcheLinux certifica que @".$FULANO.
-        "@ esteve presente no evento realizado no dia 6 de Dezembro de 2014 ".
-        "nas dependências da Faculdade SENAC de Porto Alegre e assistiu as ".
+    $msg = "O Grupo de Usuários de Software Livre Tchelinux certifica que @".$FULANO.
+        "@ esteve presente no evento realizado no dia 11 de Junho de 2016 ".
+        "nas dependências da UNIPAMPA Bagé e assistiu as ".
         "palestras:";
 
     $pdf->SetY(85);
