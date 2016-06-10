@@ -155,10 +155,15 @@ h2.subtitle {
     display: block;
 }
 
+.description {
+    text-align: center;
+}
+
 .speaker {
     color: #666;
     font-weight: lighter;
     display: block;
+    text-align: center;
 }
 
 .speaker-name{
